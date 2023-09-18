@@ -1,6 +1,7 @@
 import { getData } from "./api/getData";
 import Footer from "./component/shared/Footer/Footer";
-import NaVBar from "./component/shared/Navbar/NaVBar";
+// import NaVBar from "./component/shared/Navbar/NaVBar";
+import NavBars from "./component/shared/Navbar/NavBars";
 import TopBanner from "./component/shared/TopBanner/TopBanner";
 import TopNav from "./component/shared/TopNav/TopNav";
 import "./globals.css";
@@ -23,7 +24,7 @@ export default async function RootLayout({ children }) {
         <div>
           <TopNav/>
           <TopBanner/>
-          <NaVBar/>
+          <NavBars/>
         </div>
         <main>{children}</main>
         <Footer/>
