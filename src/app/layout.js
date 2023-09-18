@@ -1,4 +1,6 @@
 import { getData } from "./api/getData";
+import TopBanner from "./component/shared/TopBanner/TopBanner";
+import TopNav from "./component/shared/TopNav/TopNav";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -17,7 +19,8 @@ export default async function RootLayout({ children }) {
       {/* style={{backgroundImage:`url(${bg.src})`}} */}
       <body className={inter.className} >
         <div>
-          
+          <TopNav/>
+          <TopBanner/>
         </div>
         <main>{children}</main>
       </body>
