@@ -1,4 +1,6 @@
 import { getData } from "./api/getData";
+import Footer from "./component/shared/Footer/Footer";
+import NaVBar from "./component/shared/Navbar/NaVBar";
 import TopBanner from "./component/shared/TopBanner/TopBanner";
 import TopNav from "./component/shared/TopNav/TopNav";
 import "./globals.css";
@@ -21,8 +23,10 @@ export default async function RootLayout({ children }) {
         <div>
           <TopNav/>
           <TopBanner/>
+          <NaVBar/>
         </div>
         <main>{children}</main>
+        <Footer/>
       </body>
     </html>
   );
