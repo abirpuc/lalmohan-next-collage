@@ -16,7 +16,9 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       {/* style={{backgroundImage:`url(${bg.src})`}} */}
       <body className={inter.className} >
-        <div></div>
+        <div>
+          
+        </div>
         <main>{children}</main>
       </body>
     </html>
